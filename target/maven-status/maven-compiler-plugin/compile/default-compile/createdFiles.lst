@@ -1,5 +1,0 @@
-com/noava/bookstore/BookStoreApplication.class
-com/noava/bookstore/repository/BookRepository.class
-com/noava/bookstore/service/BookService.class
-com/noava/bookstore/controller/BookController.class
-com/noava/bookstore/model/Book.class
