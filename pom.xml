@@ -101,11 +101,11 @@
     <distributionManagement>
         <repository>
             <id>nexus-releases</id>
-            <url>http://34.238.251.118:8081/repository/rel-online0book-store/</url>
+            <url>http://34.205.127.94:8081/repository/online-bookstore-release/</url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>http://34.238.251.118:8081/repository/online-book-store-snapshot/</url>
+            <url>http://34.205.127.94:8081/repository/snapshot-online-book-store/</url>
         </snapshotRepository>
     </distributionManagement>
 
