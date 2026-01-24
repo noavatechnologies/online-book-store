@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Noava Online Book Store</title>
+    <title>Noava Technologies Online Book Store</title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet"
@@ -18,7 +18,7 @@
 <header class="header">
     <h1>
         <i class="fa-solid fa-book"></i>
-        Noava Online Book Store
+        Noava Technologies Online Book Store
     </h1>
     <p>Your one-stop shop for books</p>
 </header>
@@ -42,7 +42,7 @@
 <section class="content">
     <h2>Welcome</h2>
     <p>
-        Welcome to the Noava Online Book Store.  
+        Welcome to the Noava Technologies Online Book Store.  
         Browse our collection of books and explore quality content built with Java and Apache Tomcat.
     </p>
 </section>

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Books | Noava Online Book Store</title>
+    <title>Books | Noava Technologies Online Book Store</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
@@ -17,7 +17,7 @@
 <header class="header">
     <h1>
         <i class="fa-solid fa-book"></i>
-        Noava Online Book Store
+        Noava Technologies Online Book Store
     </h1>
     <p>Your one-stop shop for books</p>
 </header>
