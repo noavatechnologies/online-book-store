@@ -23,7 +23,7 @@
         <!-- SonarQube -->
         <sonar.projectKey>noava-online-book-store</sonar.projectKey>
         <sonar.projectName>Online Book Store</sonar.projectName>
-        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.host.url>http://107.20.74.44:9000/</sonar.host.url>
     </properties>
 
     <dependencies>
