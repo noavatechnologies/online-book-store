@@ -17,13 +17,13 @@
     </organization>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- SonarQube -->
         <sonar.projectKey>noava-online-book-store</sonar.projectKey>
         <sonar.projectName>Online Book Store</sonar.projectName>
-        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.host.url>http://107.20.74.44:9000/</sonar.host.url>
     </properties>
 
     <dependencies>
@@ -101,11 +101,11 @@
     <distributionManagement>
         <repository>
             <id>nexus-releases</id>
-            <url>http://34.238.251.118:8081/repository/rel-online0book-store/</url>
+            <url>http://34.205.127.94:8081/repository/noava-book-release/</url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>http://34.238.251.118:8081/repository/online-book-store-snapshot/</url>
+            <url>http://34.205.127.94:8081/repository/snapshot-noava/</url>
         </snapshotRepository>
     </distributionManagement>
 
