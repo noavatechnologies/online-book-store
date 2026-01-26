@@ -7,6 +7,14 @@ pipeline {
 
     stages {
 
+        stage('Checkout') {
+            steps {
+                echo '========== Checking out source code =========='
+                git branch: 'staging',
+                    url: 'https://github.com/noavatechnologies/online-book-store.git'
+            }
+        }
+
         stage('Build') {
             steps {
                 echo '========== Building application =========='
