@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'jdk17'
+        maven 'maven3'
+    }
+
     environment {
         APP_NAME = 'online-book-store'
     }
@@ -20,6 +25,18 @@ pipeline {
                 echo '========== Building application =========='
                 sh 'mvn clean package -DskipTests'
             }
+        }
+    }
+
+    post {
+        always {
+            echo '========== Build Complete =========='
+        }
+        success {
+            echo '========== Build Successful =========='
+        }
+        failure {
+            echo '========== Build Failed =========='
         }
     }
 }
