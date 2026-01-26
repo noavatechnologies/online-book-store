@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'maven3.9.12'
+    }
+
     environment {
         APP_NAME = 'online-book-store'
     }
@@ -10,8 +14,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo '========== Checking out source code =========='
-                git branch: 'staging',
-                    url: 'https://github.com/noavatechnologies/online-book-store.git'
+                git branch: 'staging', url: 'https://github.com/noavatechnologies/online-book-store.git'
             }
         }
 
