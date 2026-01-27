@@ -18,7 +18,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo '========== Checking out source code =========='
-                git branch: 'staging',
+                git branch: 'test',
                     url: 'https://github.com/noavatechnologies/online-book-store.git'
             }
         }
