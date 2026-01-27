@@ -10,6 +10,7 @@ pipeline {
         SONAR_PROJECT_KEY = 'online-book-store'
         NEXUS_URL = 'http://<NEXUS_HOST>:8081'
         NEXUS_REPO = 'maven-releases'
+        TOMCAT_URL = 'http://<TOMCAT_HOST>:8080'
     }
 
     stages {
@@ -63,6 +64,23 @@ pipeline {
                         mvn deploy -DskipTests \
                         -Dnexus.username=$NEXUS_USER \
                         -Dnexus.password=$NEXUS_PASS
+                    """
+                }
+            }
+        }
+
+        stage('Deploy to Tomcat') {
+            steps {
+                echo '========== Deploying to Tomcat =========='
+                withCredentials([usernamePassword(
+                    credentialsId: 'JENKINS-TOMCAT-CRED',
+                    usernameVariable: 'TOMCAT_USER',
+                    passwordVariable: 'TOMCAT_PASS'
+                )]) {
+                    sh """
+                        curl -v -u $TOMCAT_USER:$TOMCAT_PASS \
+                        -T target/${APP_NAME}.war \
+                        "$TOMCAT_URL/manager/text/deploy?path=/${APP_NAME}&update=true"
                     """
                 }
             }
