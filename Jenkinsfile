@@ -10,7 +10,7 @@ pipeline {
         SONAR_PROJECT_KEY = 'online-book-store'
         NEXUS_URL = 'http://<NEXUS_HOST>:8081'
         NEXUS_REPO = 'maven-releases'
-        TOMCAT_URL = 'http://<TOMCAT_HOST>:8080'
+        TOMCAT_URL = 'http://3.90.164.200:8080'
     }
 
     stages {
